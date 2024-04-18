@@ -21,5 +21,6 @@ def index(request):
 
     else:           ## written else statement to avoid the local varible referenced  before assignment
     ## this error always happnens anytime we are using an if statement and there is a variable being assigned without adding else statement
+        city=""
         data={}       
-    return render(request,'index.html',data)
+    return render(request,'index.html',{'city':city,'data':data})
